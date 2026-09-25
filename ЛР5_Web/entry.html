@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Личный дневник — Хороший день</title>
+<meta name="description" content="Просмотр записи личного дневника с текстом, тегами и статистикой настроения.">
+<link rel="stylesheet" href="css/normalize.min.css">
+<link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="brand">
+    <span class="brand__mark">ЛД</span>
+    <span>Личный дневник</span>
+  </div>
+  <div class="header__right">
+    <div class="avatar">МИ</div>
+    <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="layout">
+
+  <nav class="nav" aria-label="Основная навигация">
+    <a href="index.html">Вход</a>
+    <a href="entries.html">Лента записей</a>
+    <a href="entry.html" class="active">Детализация записи</a>
+    <a href="profile.html">Профиль</a>
+    <a href="entries.html" class="nav__cta">+ Новая запись</a>
+  </nav>
+
+  <main class="content">
+
+    <p class="crumbs">
+      <a href="entries.html">&larr; Все записи</a>
+      <span>/</span>
+      <span>Хороший день</span>
+    </p>
+
+    <article class="entry-view">
+
+      <div class="entry-view__media">
+        <img src="assets/img/entry-park.png" alt="Прогулка в парке">
+      </div>
+
+      <div class="entry-view__main">
+        <h1>Хороший день</h1>
+
+        <p class="meta">
+          <span>12 сентября 2026</span>
+          <span class="meta__mood"><span class="dot dot--good"></span>Настроение: хорошее</span>
+          <span>1 фото</span>
+        </p>
+
+        <div class="entry-text">
+          <p>Сегодня был замечательный день. Сходил на долгую прогулку в парке, погода была тёплой и солнечной — как будто лето решило задержаться ещё на пару недель.</p>
+          <p>Встретил старого друга, разговорились и не заметили, как пролетело время. Такие случайные встречи почему-то запоминаются лучше, чем запланированные.</p>
+          <p>Вечером вернулся домой с ощущением, что день прожит не зря. Нужно почаще выбираться из дома просто так, без цели.</p>
+        </div>
+
+        <div class="tags">
+          <span class="tag">#прогулка</span>
+          <span class="tag">#друзья</span>
+          <span class="tag">#осень</span>
+        </div>
+
+        <div class="actions">
+          <a href="#" class="btn btn--primary">Редактировать</a>
+          <a href="#" class="btn">В избранное</a>
+          <a href="entries.html" class="btn">Удалить</a>
+        </div>
+      </div>
+
+    </article>
+
+    <section class="aside" aria-label="Статистика настроения">
+
+      <div class="card">
+        <h3>Настроение за неделю</h3>
+        <div class="chart">
+          <div class="bar" style="height:45%"></div>
+          <div class="bar" style="height:70%"></div>
+          <div class="bar" style="height:55%"></div>
+          <div class="bar" style="height:90%"></div>
+          <div class="bar" style="height:65%"></div>
+          <div class="bar" style="height:80%"></div>
+          <div class="bar" style="height:60%"></div>
+        </div>
+        <div class="chart__labels">
+          <span>Пн</span><span>Вт</span><span>Ср</span><span>Чт</span>
+          <span>Пт</span><span>Сб</span><span>Вс</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Статистика</h3>
+        <div class="stats">
+          <div class="stat"><b>42</b><span>записи всего</span></div>
+          <div class="stat"><b>7</b><span>дней подряд</span></div>
+          <div class="stat"><b>18</b><span>фотографий</span></div>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+</div>
+
+<footer class="site-footer">
+  <span>&copy; 2026 Личный дневник</span>
+  <span>Лабораторная работа №&nbsp;5 — мобильно-ориентированная вёрстка</span>
+</footer>
+
+<script src="js/script.min.js"></script>
+</body>
+</html>

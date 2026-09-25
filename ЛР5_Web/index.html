@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Личный дневник — Вход</title>
+<meta name="description" content="Личный дневник — мобильно-ориентированное веб-приложение для ведения записей, отслеживания настроения и просмотра личной статистики.">
+<link rel="stylesheet" href="css/normalize.min.css">
+<link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="brand">
+    <span class="brand__mark">ЛД</span>
+    <span>Личный дневник</span>
+  </div>
+  <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<div class="layout">
+
+  <nav class="nav" aria-label="Основная навигация">
+    <a href="index.html">Вход</a>
+    <a href="entries.html">Лента записей</a>
+    <a href="entry.html">Детализация записи</a>
+    <a href="profile.html">Профиль</a>
+    <a href="entries.html" class="nav__cta">+ Новая запись</a>
+  </nav>
+
+  <main class="content">
+    <section class="auth">
+
+      <div class="auth__hero">
+        <img src="assets/img/hero-auth.png" alt="Иллюстрация: экран личного дневника с записями">
+      </div>
+
+      <div class="auth__body">
+        <h1>С возвращением!</h1>
+        <p class="lead">Войдите, чтобы продолжить вести свой дневник</p>
+
+        <form class="auth-form" novalidate>
+          <div class="form-msg" role="status" aria-live="polite"></div>
+
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email">
+            <small class="error">Введите корректный email-адрес</small>
+          </div>
+
+          <div class="field">
+            <label for="password">Пароль</label>
+            <input type="password" id="password" name="password" placeholder="Минимум 6 символов" autocomplete="current-password">
+            <small class="error">Пароль должен быть не короче 6 символов</small>
+          </div>
+
+          <div class="form-foot">
+            <label><input type="checkbox" name="remember"> Запомнить меня</label>
+            <a href="#">Забыли пароль?</a>
+          </div>
+
+          <button type="submit" class="btn btn--primary">Войти</button>
+
+          <div class="divider">или войти через</div>
+
+          <div class="social-row">
+            <button type="button" class="btn">Google</button>
+            <button type="button" class="btn">Apple</button>
+          </div>
+
+          <p class="form-foot" style="justify-content:center; gap:.3rem;">
+            Нет аккаунта? <a href="#">Зарегистрироваться</a>
+          </p>
+        </form>
+      </div>
+
+    </section>
+  </main>
+</div>
+
+<footer class="site-footer">
+  <span>&copy; 2026 Личный дневник</span>
+  <span>Лабораторная работа №&nbsp;5 — мобильно-ориентированная вёрстка</span>
+</footer>
+
+<script src="js/script.min.js"></script>
+</body>
+</html>

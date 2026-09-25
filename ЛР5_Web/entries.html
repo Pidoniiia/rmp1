@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Личный дневник — Мои записи</title>
+<meta name="description" content="Лента записей личного дневника с фильтром по настроению и поиском.">
+<link rel="stylesheet" href="css/normalize.min.css">
+<link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="brand">
+    <span class="brand__mark">ЛД</span>
+    <span>Личный дневник</span>
+  </div>
+  <div class="header__right">
+    <div class="avatar">МИ</div>
+    <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="layout">
+
+  <nav class="nav" aria-label="Основная навигация">
+    <a href="index.html">Вход</a>
+    <a href="entries.html" class="active">Лента записей</a>
+    <a href="entry.html">Детализация записи</a>
+    <a href="profile.html">Профиль</a>
+    <a href="entries.html" class="nav__cta">+ Новая запись</a>
+  </nav>
+
+  <main class="content">
+
+    <div class="page-head">
+      <div>
+        <h1>Мои записи</h1>
+        <p>Сентябрь 2026 · 4 записи</p>
+      </div>
+      <a href="entry.html" class="btn btn--primary btn--auto-tablet">+ Новая запись</a>
+    </div>
+
+    <section class="filters" aria-label="Фильтры записей">
+      <input type="search" placeholder="Поиск по записям и тегам" aria-label="Поиск">
+      <button class="chip active" data-mood="all">Все</button>
+      <button class="chip" data-mood="good">Хорошее</button>
+      <button class="chip" data-mood="tired">Обычное</button>
+      <button class="chip" data-mood="bad">Плохое</button>
+    </section>
+
+    <p class="month-label">Сентябрь 2026</p>
+
+    <section class="feed" aria-label="Список записей">
+
+      <article class="entry-card" data-mood="good">
+        <div class="entry-card__media">
+          <img src="assets/img/entry-park.png" alt="Прогулка в парке">
+        </div>
+        <div class="entry-card__body">
+          <div class="entry-card__head">
+            <h2 class="entry-card__title">Хороший день</h2>
+            <span class="mood"><span class="dot dot--good"></span>хорошее</span>
+          </div>
+          <p class="entry-card__date">12 сентября 2026</p>
+          <p class="entry-card__text">Сходил на долгую прогулку в парке, погода была тёплой и солнечной…</p>
+          <div class="tags"><span class="tag">#прогулка</span><span class="tag">#друзья</span></div>
+        </div>
+      </article>
+
+      <article class="entry-card" data-mood="tired">
+        <div class="entry-card__media">
+          <img src="assets/img/entry-cafe.png" alt="Вечер в кафе">
+        </div>
+        <div class="entry-card__body">
+          <div class="entry-card__head">
+            <h2 class="entry-card__title">Устал, но доволен</h2>
+            <span class="mood"><span class="dot dot--tired"></span>усталость</span>
+          </div>
+          <p class="entry-card__date">11 сентября 2026</p>
+          <p class="entry-card__text">Много работы, зато успел сдать проект вовремя. Вечером зашёл в кафе…</p>
+          <div class="tags"><span class="tag">#работа</span><span class="tag">#кафе</span></div>
+        </div>
+      </article>
+
+      <article class="entry-card" data-mood="good">
+        <div class="entry-card__media">
+          <img src="assets/img/entry-note.png" alt="Запись дневника">
+        </div>
+        <div class="entry-card__body">
+          <div class="entry-card__head">
+            <h2 class="entry-card__title">Маленькая победа</h2>
+            <span class="mood"><span class="dot dot--great"></span>отличное</span>
+          </div>
+          <p class="entry-card__date">10 сентября 2026</p>
+          <p class="entry-card__text">Наконец закончил книгу, которую откладывал почти полгода…</p>
+          <div class="tags"><span class="tag">#книги</span><span class="tag">#цели</span></div>
+        </div>
+      </article>
+
+      <article class="entry-card" data-mood="bad">
+        <div class="entry-card__media">
+          <img src="assets/img/entry-note.png" alt="Запись дневника">
+        </div>
+        <div class="entry-card__body">
+          <div class="entry-card__head">
+            <h2 class="entry-card__title">Тяжёлый день</h2>
+            <span class="mood"><span class="dot dot--bad"></span>плохое</span>
+          </div>
+          <p class="entry-card__date">9 сентября 2026</p>
+          <p class="entry-card__text">Не всё пошло по плану, но завтра будет лучше. Главное — не останавливаться…</p>
+          <div class="tags"><span class="tag">#мысли</span></div>
+        </div>
+      </article>
+
+    </section>
+
+  </main>
+</div>
+
+<footer class="site-footer">
+  <span>&copy; 2026 Личный дневник</span>
+  <span>Лабораторная работа №&nbsp;5 — мобильно-ориентированная вёрстка</span>
+</footer>
+
+<script src="js/script.min.js"></script>
+</body>
+</html>
