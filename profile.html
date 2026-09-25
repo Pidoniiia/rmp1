@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Личный дневник — Профиль</title>
+<meta name="description" content="Профиль пользователя, статистика настроения и настройки приватности личного дневника.">
+<link rel="stylesheet" href="css/normalize.min.css">
+<link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="brand">
+    <span class="brand__mark">ЛД</span>
+    <span>Личный дневник</span>
+  </div>
+  <div class="header__right">
+    <div class="avatar">МИ</div>
+    <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="layout">
+
+  <nav class="nav" aria-label="Основная навигация">
+    <a href="index.html">Вход</a>
+    <a href="entries.html">Лента записей</a>
+    <a href="entry.html">Детализация записи</a>
+    <a href="profile.html" class="active">Профиль</a>
+    <a href="entries.html" class="nav__cta">+ Новая запись</a>
+  </nav>
+
+  <main class="content">
+
+    <section class="profile-head">
+      <div class="avatar">МИ</div>
+      <h1>Мария Иванова</h1>
+      <p>42 записи · с января 2026</p>
+    </section>
+
+    <section class="card" aria-label="Статистика настроения за месяц" style="margin-bottom:1rem;">
+      <h3>Настроение за месяц</h3>
+      <div class="chart">
+        <div class="bar" style="height:35%"></div>
+        <div class="bar" style="height:55%"></div>
+        <div class="bar" style="height:40%"></div>
+        <div class="bar" style="height:75%"></div>
+        <div class="bar" style="height:50%"></div>
+        <div class="bar" style="height:68%"></div>
+        <div class="bar" style="height:45%"></div>
+        <div class="bar" style="height:80%"></div>
+        <div class="bar" style="height:60%"></div>
+        <div class="bar" style="height:72%"></div>
+      </div>
+    </section>
+
+    <h2 style="font-size:1rem; margin:0 0 .6rem;">Настройки</h2>
+    <nav class="settings-list" aria-label="Настройки аккаунта">
+      <a class="settings-item" href="#"><span>Приватность записей</span><span class="chev">&rsaquo;</span></a>
+      <a class="settings-item" href="#"><span>Напоминания</span><span class="chev">&rsaquo;</span></a>
+      <a class="settings-item" href="#"><span>Экспорт данных (PDF)</span><span class="chev">&rsaquo;</span></a>
+      <a class="settings-item" href="#"><span>PIN-код входа</span><span class="chev">&rsaquo;</span></a>
+      <a class="settings-item" href="index.html"><span>Выйти из аккаунта</span><span class="chev">&rsaquo;</span></a>
+    </nav>
+
+  </main>
+</div>
+
+<footer class="site-footer">
+  <span>&copy; 2026 Личный дневник</span>
+  <span>Лабораторная работа №&nbsp;5 — мобильно-ориентированная вёрстка</span>
+</footer>
+
+<script src="js/script.min.js"></script>
+</body>
+</html>
